@@ -7,15 +7,19 @@ void main() {
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Vegetables App',
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.grey,
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MainPage(),
-    );
-  }
+  Widget build(BuildContext context) => GestureDetector(
+        onTap: (){
+          FocusScope.of(context).requestFocus(new FocusNode());
+        },
+        child: MaterialApp(
+          title: 'Vegetables App',
+          theme: ThemeData(
+//        scaffoldBackgroundColor: Colors.grey,
+            fontFamily: 'roboto',
+            primarySwatch: Colors.green,
+            visualDensity: VisualDensity.adaptivePlatformDensity,
+          ),
+          home: MainPage(),
+        ),
+      );
 }
