@@ -72,12 +72,13 @@ class ProductCard extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Made in\n Iran',
+                              'Made in\nIran',
                               style: TextStyle(
                                 fontSize: 17,
                                 color: darkGrey.withOpacity(0.7),
                               ),
                             ),
+                            SizedBox(height: 5,),
                             Row(
                               children: [
                                 Icon(
